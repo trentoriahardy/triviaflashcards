@@ -10,7 +10,7 @@ html(lang="en")
     
 body
 
-   .container
+    .container
         .jumbotron
         h1 Trivia Flashcards App
 p
@@ -20,22 +20,43 @@ p
 
             div(class='flashcard-FRONT')
             #flashcard-FRONT
-                h2.answer Answer
+                h2.answer 
                 
 
-                 BACK SIDE
+                 BACK 
                 div(class='flashcard-BACK')
                 #flashcard-BACK
                     br
-                    h2.question Question
-                    h2.hint
-                    button.hintButton Hint
+                    h2.question 
                     button.answerButton Answer
                     button.next Next
                     button.delete Delete
+                    button.update Update
+                
                 
                 
                
+.modal
+    .modal-content
+        form(action="/triviaflashcards", method="post")
+            input#question(type="text", name="")
+            input#answer(type="text", name="")
+            button(type="submit") Submit
+
+.modal2
+    .modal-content
+        form(action="/update", method="post")
+            input#question(type="text", name="")
+            input#answer(type="text", name="")
+            button(type="submit") Submit
+
+.modal3
+    .modal-content
+        form(action="/delete", method="post")
+            input#id(type="text", name="")
+            button(type="submit") Submit
+
+
 
           
 

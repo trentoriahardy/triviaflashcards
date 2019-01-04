@@ -21,18 +21,13 @@ p {
   margin: 0;
 }
 
-
-.flashcard-FRONT{
-
-  background-image: url(polka.jpg);
-}
-#flashcard-FRONT {
-  background: whitesmoke;
+#flashcard-FRONT {  
+  background: whitesmoke; 
   justify-content: center;
   width: 500px;
   height: 400px;
   padding: 30px;
-  color:black;
+  color: black;
   text-align: center;
   margin: 0px 5px;
   border: 7px black solid;
@@ -51,6 +46,44 @@ p {
   box-shadow: 1px 1px 4px 0px #00000042;
 }
 
+.modal{
+  display:none;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  width: 50%;
+  overflow: auto;
+}
+.modal2{
+  display:none;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  width: 50%;
+  overflow: auto;
+}
+
+.modal3{
+  display:none;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  width: 50%;
+  overflow: auto;
+}
+
+.modal-content{
+
+  background-size: 100%;
+  margin: 15px auto;
+  padding: 20px;
+  border: 1px solid black;
+  width: 80%;
+  height: 80%;
+  color: white;
+  box-shadow: 5px 5px 20px black;
+
+}
 
 
 

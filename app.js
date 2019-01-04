@@ -40,9 +40,7 @@ app.post("/triviaflashcards", (req, res) => {
         console.log('saved to database :)')
         res.redirect('/')
     })
-    // $(".card").click(function () {
-    //     $(this).find(".cardInner").toggleClass("flipped");
-    // });
+  
 })
 
 
