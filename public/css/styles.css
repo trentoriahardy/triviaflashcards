@@ -22,11 +22,10 @@ p {
 }
 
 
-/* .container{
-  height: 100%;
-  width: 100%;
- 
-} */
+.flashcard-FRONT{
+
+  background-image: url(polka.jpg);
+}
 #flashcard-FRONT {
   background: whitesmoke;
   justify-content: center;
@@ -41,8 +40,7 @@ p {
 }
 
 #flashcard-BACK {
-  background-image: url(polka.jpg);
-  
+  background: whitesmoke; 
   width: 500px;
   height:400px;
   padding: 30px;
