@@ -72,6 +72,37 @@ p {
   overflow: auto;
 }
 
+.modal{
+
+  display: none;
+  height: 450px;
+  width: 300px;
+  z-index: 1;
+  position: absolute;
+  overflow: auto;
+
+}
+
+.modal2{
+    display: none;
+    height: 450px;
+    width: 300px;
+    z-index: 1;
+    position: absolute;
+    overflow: auto;
+
+  }
+
+  .modal3{
+    display: none;
+    height: 450px;
+    width: 300px;
+    z-index: 1;
+    position: absolute;
+    overflow: auto;
+
+  }
+
 .modal-content{
 
   background-size: 100%;

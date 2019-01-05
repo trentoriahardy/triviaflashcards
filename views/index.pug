@@ -38,23 +38,27 @@ p
                
 .modal
     .modal-content
-        form(action="/triviaflashcards", method="post")
+        form(action="/triviaflashapp", method="POST")
             input#question(type="text", name="")
             input#answer(type="text", name="")
             button(type="submit") Submit
 
 .modal2
     .modal-content
-        form(action="/update", method="post")
-            input#question(type="text", name="")
-            input#answer(type="text", name="")
-            button(type="submit") Submit
+        form(action="/update", method="POST")
+            input#question(type="text", name="", placeholder="Question")
+            input#answer(type="text", name="", placeholder="Answer")
+            button(type="submit") Update
 
 .modal3
     .modal-content
-        form(action="/delete", method="post")
-            input#id(type="text", name="")
-            button(type="submit") Submit
+        form(action="/delete", method="POST")
+            p#id Enter ID to Delete Card
+            input#id(type="text", name="id", placeholder="ID")
+            button.deleteIt(type="submit") Delete
+        button.returnButton(type="submit") Return
+
+           
 
 
 

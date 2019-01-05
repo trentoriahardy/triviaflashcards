@@ -1,5 +1,5 @@
 const express = require('express')//requires express all the time
-const app = express()//make sure express run
+const app = express()//make sure express runs
 const bodyParser = require('body-parser')//
 const MongoClient = require('mongodb').MongoClient //connect takes two parameters
 app.set("view engine", "pug")
@@ -14,10 +14,9 @@ app.use(bodyParser.urlencoded({extended: true}))
 MongoClient.connect("mongodb://flashapp2:123456a@ds051534.mlab.com:51534/triviaflashapp",{useNewUrlParser:true}, (err, database) => {
     if (err) return console.log(err)
     db = database.db("triviaflashapp")
-    //app.listen(8080, function() {
         console.log("listening on 8080!")//taking in connection port
     })  
-//})
+
 
 app.get('/', function (req, res) {
     let cursor = db.collection("triviaflashcards").find().toArray(function (err, results) {
@@ -63,7 +62,7 @@ app.post("/update", (req,res)=> {
 app.post("/delete", (req,res)=> {
     id = req.body._id
  
-        db.collection('triviaflashcards').deleteOne({"id":objectID(id)}, function ( result) {
+        db.collection('triviaflashcards').deleteOne({"id":id}, function ( result) {
             console.log()
  
         })
